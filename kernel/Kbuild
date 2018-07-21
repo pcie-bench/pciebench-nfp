@@ -1,0 +1,25 @@
+
+override EXTRA_CFLAGS +=
+#override EXTRA_CFLAGS += -g3
+override EXTRA_CFLAGS += -DCONFIG_NFP_A0_WORKAROUND -DCONFIG_NFP_A1_WORKAROUND
+override EXTRA_CFLAGS += -DDEBUG
+override EXTRA_CFLAGS += -Werror
+
+nfp-kmod-dir ?= bsp/nfp-drv-kmods.git
+
+nfp_pciebench-y += \
+	nfp_pciebench_main.o \
+	nfpcore/crc32.o \
+	nfpcore/nfp3200_pcie.o \
+	nfpcore/nfp3200_plat.o \
+	nfpcore/nfp6000_pcie.o \
+	nfpcore/nfp_ca.o \
+	nfpcore/nfp_cppcore.o \
+        nfpcore/nfp_cpplib.o \
+        nfpcore/nfp_dev_cpp.o \
+        nfpcore/nfp_device.o \
+	nfpcore/nfp_em_manager.o \
+	nfpcore/nfp_platform.o \
+        nfpcore/nfp_resource.o
+
+obj-m += nfp_pciebench.o
