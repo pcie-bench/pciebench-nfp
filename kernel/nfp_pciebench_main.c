@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2015 Rolf Neugebauer. All rights reserved.
+ * Copyright (C) 2015-2018 Rolf Neugebauer. All rights reserved.
  * Copyright (C) 2015 Netronome Systems, Inc. All rights reserved.
  *
  * This program is free software; you can redistribute it and/or
