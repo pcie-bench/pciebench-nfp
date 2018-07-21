@@ -1,0 +1,10 @@
+*.pyc
+*.list
+*.obj
+*.o
+*.cmd
+*.ucp
+*.uci
+/kernel/*.mk
+/kernel/nfpcore
+/nfp-drv-kmods
